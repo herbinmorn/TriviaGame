@@ -1,5 +1,11 @@
 html{background: url("../images/bg.jpg")}
 
+div{
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
 #canvas{
     margin:100px auto;
     background-color: burlywood;
@@ -16,7 +22,7 @@ header{
     text-align: center;
 }
 
-#start{
+.start{
     height:30px;
     width:200px;
     margin:auto;
@@ -26,3 +32,9 @@ header{
     color:black;
     font-size:24px;
 }
+
+#timer{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+}
+

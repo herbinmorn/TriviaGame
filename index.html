@@ -9,20 +9,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+
     <div id="canvas">
         <header><h1>Totally Trivial Trivia!</h1></header>
 
-        <button id="start">Start!</button>
+        <button class="start">Start!</button>
+
         <div id="timer">Time Remaining: Seconds</div>
         <div id="questions"></div>
-        <button class="choices" id="answer1"></button>
-        <button class="choices" id="answer2"></button>
-        <button class="choices" id="answer3"></button>
+        <button class="choices" id="answer1"></button><br/>
+        <button class="choices" id="answer2"></button><br/>
+        <button class="choices" id="answer3"></button><br/>
         <button class="choices" id="answer4"></button>
+
+
         <div id="yesNo"></div>
         <div id="image-title"></div>
-        <div id="image-holder"></div>
+        <section id="image-holder"></section>
 
+        <div id="done">All done, here is how you did!</div>
+        <div class="summary" id="correct"></div>
+        <div class="summary" id="wrong"></div>
+        <div class="summary" id="unanswered"></div>
+        
+        <button class="start">Start Over?</button>
     </div>
        
  <script type="text/javascript" src="assets/javascript/app.js">
