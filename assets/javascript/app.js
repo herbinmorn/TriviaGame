@@ -1,4 +1,5 @@
 
+
 var questions =["Which of the following is NOT one of the three macronutrients in food?","which of the following is a monosaccharide?","which mineral will help you relax/sleep better?","which of the following is a natural zero calorie sweetener?"];
 
 var answer1 =['Fats','Sucrose','Calcium','Honey'];
@@ -120,5 +121,3 @@ $('#answer4').click(no);
 
 //$('#start-canvas').show();
 //$('#question-canvas').hide();
-
-
