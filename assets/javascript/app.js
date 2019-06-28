@@ -97,7 +97,12 @@ function no(){
 }
 
 var startGame= function(){
-    clearInterval(intervalId);
+    i=0;
+    correct = 0;
+    wrong =0;
+    unanswered =0;
+
+    //clearInterval(intervalId);
     showQuestions();
     
 }
