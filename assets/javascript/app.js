@@ -12,6 +12,12 @@ var timelimit = 30;
 var intervalId;
 var number = timelimit;
 var i=0;
+
+
+var correct = 0;
+var wrong =0;
+var unanswered =0;
+
 function run(){
     clearInterval(intervalId);
     intervalId = setInterval(decrement,1000);
@@ -47,9 +53,6 @@ var showQuestions=function(){
     $("#image-holder").html("");
 }
 
-var correct = 0;
-var wrong =0;
-var unanswered =0;
 
 var showAnswers = function() {
    // $('#question-canvas').hide();
@@ -83,16 +86,17 @@ var showRecord = function(){
 }
 
 function yes(){
+    correct = correct + 1;
     showAnswers();
     $('#yesNo').html('<div>Correct! Congratulations!</div>');
-    correct = correct + 1;
+    
     
 }
 
 function no(){
+    wrong = wrong + 1;
     showAnswers();
     $('#yesNo').html('<div>Nope!</div>');
-    wrong = wrong + 1;
     
 }
 
