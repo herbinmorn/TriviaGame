@@ -69,8 +69,9 @@ var showAnswers = function() {
     $("#image-holder").html("<img src=" + images[i] + " width='400px'>");
     i=i+1;
     if(i===4){
-        showRecord();
         stop();
+        setTimeout(showRecord,3000);
+        
     }
     else
     {
@@ -112,9 +113,7 @@ var startGame= function(){
     i=0;
     correct = 0;
     wrong =0;
-    unanswered =0;
-
-    
+    unanswered =0;   
     showQuestions();
     
 }
