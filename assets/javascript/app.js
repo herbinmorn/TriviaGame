@@ -30,6 +30,7 @@ function decrement(){
     if (number === 0){
         stop();
         unanswered++;
+        $('#yesNo').html('<div>Time Out!</div>');
         showAnswers(i);
         }
     }
