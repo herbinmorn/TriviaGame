@@ -13,27 +13,30 @@
 
     <div id="canvas">
         <header><h1>Totally Trivial Trivia!</h1></header>
-
+        <div class='start-canvas'>
         <button class="start">Start!</button>
-
+        </div>
+        <div class='question-canvas'>
         <div id="timer">Time Remaining: Seconds</div>
         <div id="questions"></div>
         <button class="choices" id="answer1"></button><br/>
         <button class="choices" id="answer2"></button><br/>
         <button class="choices" id="answer3"></button><br/>
         <button class="choices" id="answer4"></button>
-
-
+        </div>
+        <div class='answer-canvas'>
         <div id="yesNo"></div>
         <div id="image-title"></div>
         <section id="image-holder"></section>
+        </div>
 
+        <div class='summary-canvas'>
         <div id="done">All done, here is how you did!</div>
         <div class="summary" id="correct"></div>
         <div class="summary" id="wrong"></div>
         <div class="summary" id="unanswered"></div>
-        
         <button class="start">Start Over?</button>
+        </div>
     </div>
        
  <script type="text/javascript" src="assets/javascript/app.js">

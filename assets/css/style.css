@@ -7,6 +7,11 @@ div{
     font-size: 24px;
 }
 
+button{
+    font-size: 18px;
+    margin:8px auto;
+}
+
 #canvas{
     margin:100px auto;
     background-color: burlywood;

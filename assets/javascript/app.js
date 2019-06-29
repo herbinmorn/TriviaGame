@@ -29,8 +29,9 @@ function decrement(){
     $('#timer').html('<div>Time Remaining: ' + number +' Seconds</div>');
     if (number === 0){
         stop();
+        unanswered++;
         showAnswers(i);
-        unanswered++;}
+        }
     }
 
 
@@ -41,8 +42,10 @@ function stop(){
 
 
 var showQuestions=function(){
-    //$('#answer-canvas').hide();
-    //$('#summary-canvas').hide();
+    $('.start-canvas').hide();
+    $('.question-canvas').show();
+    $('.answer-canvas').hide();
+    $('.summary-canvas').hide();
     number = timelimit;
     run();
     $("#questions").html("<button>"+questions[i]+"</button>");
@@ -56,8 +59,10 @@ var showQuestions=function(){
 
 
 var showAnswers = function() {
-   // $('#question-canvas').hide();
-    //$('#summary-canvas').hide();
+    $('.start-canvas').hide();
+    $('.answer-canvas').show();
+    $('.question-canvas').hide();
+    $('.summary-canvas').hide();
     
     stop();
     $("#image-title").html("<div>"+imageTitles[i]+"</div>");
@@ -78,8 +83,10 @@ var showAnswers = function() {
 
 
 var showRecord = function(){
-    //$('#question-canvas').hide();
-   // $('#answer-canvas').hide();
+    $('.start-canvas').hide();
+    $('.summary-canvas').show();
+    $('.question-canvas').hide();
+    $('.answer-canvas').hide();
     $("#correct").html("Correct Answers:"+ correct);
     $("#wrong").html("Incorrect Answers:"+ wrong);
     $("#unanswered").html("Unanswered:"+ unanswered);
@@ -107,17 +114,20 @@ var startGame= function(){
     wrong =0;
     unanswered =0;
 
-    //clearInterval(intervalId);
+    
     showQuestions();
     
 }
 
+$('.start-canvas').show();
+$('.question-canvas').hide();
+$('.answer-canvas').hide();
+$('.summary-canvas').hide();
+
 $(".start").click(startGame);
-//$(".choices").click(function(){showAnswers();});
+
 $('#answer2').click(yes);
 $('#answer1').click(no);
 $('#answer3').click(no);
 $('#answer4').click(no);
 
-//$('#start-canvas').show();
-//$('#question-canvas').hide();
